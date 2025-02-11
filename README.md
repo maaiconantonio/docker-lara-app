@@ -24,25 +24,36 @@ docker-compose up -d
 </p>
 
 #### Sobre a Instalação do Laravel:
-```
 Acesse o container app:
-**docker-compose exec app bash**
-Instale as dependências do projeto:
-**composer install**
-Gere uma key do projeto Laravel:
-**php artisan key:generate**
-Rode as migrations:
-**php artisan migrate**
+```
+docker-compose exec app bash
+```
 
+Instale as dependências do projeto:
+```
+composer install
+```
+Gere uma key do projeto Laravel:
+```
+php artisan key:generate
+```
+Rode as migrations:
+```
+php artisan migrate
+```
 O projeto estará online:
 <a href="http://localhost:8000">http://localhost:8000</a>
-```
 
 #### Ambiente:
+
+###### A collection está na raiz:
 ```
-A collection está na raiz: **Cake Collection.postman_collection.json**
+Cake Collection.postman_collection.json
+```
 Para executar os testes e a fila pode usar o artisan
+
 Foram criadas as rotas do CRUD do bolo
+
 Também 2 adicionais para gravar os usuários interessados e removê-los depois do email enviado
-Foi criado um front para gravar usuários mas não funcionou o bootstrap =(
-```
+
+Foi criado um front que pode ser acessado através do navegador na url principal para gravar usuários mas não funcionou o bootstrap =(
